@@ -59,6 +59,11 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/
+          # footer 의 "Last updated" 를 배포 시각(KST)으로 갈아끼운다.
+          # 저장소의 index.html 은 건드리지 않아 커밋이 늘어나지 않는다.
+          STAMP=$(TZ=Asia/Seoul date +"%Y.%m.%d")
+          sed -i "s|\(<span id=\"updated\">\)[^<]*|\1$STAMP|" _site/index.html
+          grep -o '<span id="updated">[^<]*' _site/index.html
 
       - uses: actions/upload-pages-artifact@v4
         with:

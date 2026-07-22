@@ -1,10 +1,10 @@
 orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
-  count: 31
-  total_citations: 1935
+  count: 32
+  total_citations: 1952
   h_index: 18
-  i10_index: 20
+  i10_index: 21
   first_author_count: 6
 publications:
 - id: W7131141441
@@ -176,6 +176,28 @@ publications:
   cited_by_count: 85
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
+- id: W4211150801
+  title: Handheld laser scanning microscope catheter for real-time and in vivo confocal microscopy using
+    a high definition high frame rate Lissajous MEMS mirror
+  authors:
+  - Jaehun Jeon
+  - Hyunwoo Kim
+  - Hyunwoo Jang
+  - Kyungmin Hwang
+  - Kyuyoung Kim
+  - Young-Gyun Park
+  - Ki-Hun Jeong
+  author_position: 5
+  is_first_author: false
+  venue: Biomedical Optics Express
+  year: 2022
+  date: '2022-02-10'
+  type: article
+  doi: 10.1364/boe.447558
+  pmid: '35414975'
+  cited_by_count: 17
+  oa_url: https://doi.org/10.1364/boe.447558
+  track: professional
 - id: W3206257055
   title: Customizable, conformal, and stretchable 3D electronics via predistorted pattern generation and
     thermoforming

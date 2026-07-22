@@ -9,13 +9,15 @@ professional_doi:
   - "10.3171/case25890"            # 2026 J Neurosurg Case Lessons — 교모세포종 절제연 평가
   - "10.1038/s41698-024-00621-x"   # 2024 npj Precis Oncol — 위암 AI 실시간 조직병리
   - "10.21873/invivo.13511"        # 2024 In Vivo — 위암 조직 실시간 조직학적 평가
+  - "10.1364/boe.447558"           # 2022 Biomed Opt Express — 리사주 MEMS 핸드헬드 공초점 카테터
 
 # ORCID 에 등록돼 있지 않은 본인 논문. DOI 를 적으면 목록에 포함된다.
 # 근본 해결은 orcid.org 에 직접 추가하는 것. 추가한 뒤에는 여기서 지워도 된다.
 include_doi:
-  # VPIX · 위암 공초점 디지털 생검
+  # VPIX · 공초점 디지털 생검
   - "10.1038/s41698-024-00621-x"   # 2024 npj Precis Oncol — AI-based real-time histopathology of gastric cancer
   - "10.21873/invivo.13511"        # 2024 In Vivo — Real-time histological evaluation of gastric cancer tissue
+  - "10.1364/boe.447558"           # 2022 Biomed Opt Express — Handheld Lissajous MEMS confocal catheter
 
   # KAIST 박인규 연구실 · 유연센서
   - "10.1002/admt.202302134"       # 2024 Adv Mater Technol — Liquid-metal soft pressure sensor, ML multidirectional

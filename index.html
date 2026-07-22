@@ -21,6 +21,13 @@
   --rule: #e5e5e5;
   --bg: #fff;
   --link: #1a1a1a;
+
+  /* 본문은 세리프, 라벨·날짜는 산세리프로 대비를 준다.
+     전부 OS 기본 탑재 서체라 외부 폰트를 받아오지 않는다. */
+  --serif: "Iowan Old Style", Charter, "Bitstream Charter", "Sitka Text", Cambria,
+           Georgia, "Times New Roman", "Apple SD Gothic Neo", "Malgun Gothic", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+          "Malgun Gothic", Roboto, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -40,11 +47,11 @@ body {
   padding: 5rem 1.5rem 7rem;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
-               "Malgun Gothic", "Noto Sans KR", Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 main { max-width: 40rem; margin: 0 auto; }
@@ -61,18 +68,19 @@ a:hover { text-decoration-color: var(--muted); }
 
 h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 .sub {
-  margin: 0.2rem 0 0;
+  margin: 0.3rem 0 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .contact {
   margin: 1.75rem 0 0;
-  font-size: 0.9rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
   color: var(--muted);
 }
 .contact a { color: var(--muted); }
@@ -83,10 +91,11 @@ section { margin: 3.5rem 0 0; }
 
 h2 {
   margin: 0 0 1.25rem;
-  font-size: 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.7rem;
   font-weight: 600;
-  text-transform: lowercase;
-  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
   color: var(--faint);
 }
 h2 .n {
@@ -105,7 +114,9 @@ ul.list > li:first-child { border-top: 0; padding-top: 0; }
 
 .when {
   display: block;
-  font-size: 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
   color: var(--faint);
   font-variant-numeric: tabular-nums;
 }
@@ -122,7 +133,9 @@ footer {
   margin: 5rem 0 0;
   padding-top: 1.5rem;
   border-top: 1px solid var(--rule);
-  font-size: 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
   color: var(--faint);
 }
 
@@ -188,6 +201,7 @@ footer {
     <li><span class="what"><a href="https://doi.org/10.3171/case25890">Real-time intraoperative confocal laser endomicroscopy with on-site neuropathologist consultation for glioma margin assessment: illustrative case</a></span><span class="note">Sun Mo Nam, <span class="me">Kyuyoung Kim</span>, Jae-Kyung Won, Chul-Kee Park</span><span class="note"><span class="venue">Journal of Neurosurgery Case Lessons</span>, 2026</span></li>
     <li><span class="what"><a href="https://doi.org/10.1038/s41698-024-00621-x">Artificial intelligence-based real-time histopathology of gastric cancer using confocal laser endomicroscopy</a></span><span class="note">Haeyon Cho, Damin Moon, So Mi Heo, Jinah Chu, Hyunsik Bae, Sangjoon Choi et al.</span><span class="note"><span class="venue">npj Precision Oncology</span>, 2024</span></li>
     <li><span class="what"><a href="https://doi.org/10.21873/invivo.13511">Real-time Histological Evaluation of Gastric Cancer Tissue by Using a Confocal Laser Endomicroscopic System</a></span><span class="note">Hyunsik Bae, Haeyon Cho, Yeong-Dae Jo, So Mi Heo, Jinah Chu, Sangjoon Choi et al.</span><span class="note"><span class="venue">In Vivo</span>, 2024</span></li>
+    <li><span class="what"><a href="https://doi.org/10.1364/boe.447558">Handheld laser scanning microscope catheter for real-time and in vivo confocal microscopy using a high definition high frame rate Lissajous MEMS mirror</a></span><span class="note">Jaehun Jeon, Hyunwoo Kim, Hyunwoo Jang, Kyungmin Hwang, <span class="me">Kyuyoung Kim</span>, Young-Gyun Park et al.</span><span class="note"><span class="venue">Biomedical Optics Express</span>, 2022</span></li>
 <!-- publications:professional:end -->
   </ul>
 </section>
@@ -301,9 +315,10 @@ footer {
   </ul>
 </section>
 
+<!-- 아래 날짜는 배포할 때마다 GitHub Actions 가 그날 날짜로 갈아끼운다.
+     여기 적힌 값은 로컬에서 열어 볼 때만 보인다. -->
 <footer>
-  Clinical and commercialisation projects and patents are not listed here.
-  Please <a href="mailto:ky.kim@vpixmedical.com">get in touch</a> if you need them.
+  Last updated <span id="updated">2026.07.22</span>
 </footer>
 
 </main>
