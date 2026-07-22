@@ -1,0 +1,75 @@
+name: Update publications
+
+on:
+  # index.html 을 직접 고쳐서 push 하면 그대로 배포된다. 논문은 건드리지 않는다.
+  push:
+    branches: [main]
+  # 매주 월요일 09:00 KST 에 ORCID 를 다시 읽어 논문 목록만 갱신한다.
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install requests pyyaml
+
+      # push 는 사람이 index.html 을 고친 경우다. 논문은 그대로 두고 배포만 한다.
+      - name: Sync publications from ORCID
+        if: github.event_name != 'push'
+        env:
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+        run: |
+          python scripts/fetch_pubs.py
+          python scripts/inject_pubs.py
+
+      - name: Commit changes
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/publications.yaml index.html; then
+            echo "No publication changes."
+          else
+            git add data/publications.yaml index.html
+            git commit -m "chore: sync publications from ORCID"
+            git push
+          fi
+
+      # 공개 사이트에는 index.html 만 올린다.
+      # 스크립트나 데이터 파일은 배포물에 포함시키지 않는다.
+      - name: Collect site files
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

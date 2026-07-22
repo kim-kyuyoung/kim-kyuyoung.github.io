@@ -1,0 +1,59 @@
+# OpenAlex 자동 수집 결과를 보정하는 파일. 학회 발표는 cv.yaml 의 talks 에서 관리한다.
+# fetch_pubs.py 는 이 파일을 절대 덮어쓰지 않으므로 여기만 손으로 관리하면 된다.
+#
+# 목록의 기준은 ORCID 레코드다. ORCID 에 없는 본인 논문만 include_doi 에 적는다.
+
+# ORCID 에 등록돼 있지 않은 본인 논문. DOI 를 적으면 목록에 포함된다.
+# 근본 해결은 orcid.org 에 직접 추가하는 것. 추가한 뒤에는 여기서 지워도 된다.
+include_doi:
+  # VPIX · 위암 공초점 디지털 생검
+  - "10.1038/s41698-024-00621-x"   # 2024 npj Precis Oncol — AI-based real-time histopathology of gastric cancer
+  - "10.21873/invivo.13511"        # 2024 In Vivo — Real-time histological evaluation of gastric cancer tissue
+
+  # KAIST 박인규 연구실 · 유연센서
+  - "10.1002/admt.202302134"       # 2024 Adv Mater Technol — Liquid-metal soft pressure sensor, ML multidirectional
+  - "10.1038/s41528-023-00238-3"   # 2023 npj Flex Electron — Wireless multimodal sensors
+  - "10.1038/s41467-021-25324-w"   # 2021 Nat Commun — Battery-free wireless soft sensors
+  - "10.1002/adhm.202001461"       # 2021 Adv Healthc Mater — Ultra-wide range pressure sensor
+  - "10.1021/acsaelm.1c00546"      # 2021 ACS Appl Electron Mater — Sensitivity-controllable liquid-metal sensor
+  - "10.1186/s40486-020-00126-9"   # 2021 Micro Nano Syst Lett — All-soft multiaxial force sensor
+  - "10.1002/admt.202000847"       # 2021 Adv Mater Technol — Bottom-gated hydrogen sensor
+  - "10.1021/acssensors.9b02260"   # 2020 ACS Sens — Ultrathin biocompatible flexible pressure sensor
+  - "10.1021/acsami.0c00143"       # 2020 ACS Appl Mater Interfaces — Microporous elastomer filter w/ MOF
+  - "10.1021/acs.langmuir.0c01450" # 2020 Langmuir — Microdome-induced strain localization
+  - "10.5369/jsst.2019.28.3.198"   # 2019 J Sens Sci Technol — Wearable force sensor, 3D-printed mold
+
+# 동명이인 논문이 섞여 들어왔을 때 DOI를 여기 적으면 제외된다.
+# OpenAlex author A5074235764 가 여러 명의 Kyuyoung/Kyu-Young Kim 을 병합해 두었으나,
+# 이제 ORCID 를 기준으로 수집하므로 동명이인은 애초에 들어오지 않는다.
+# 아래는 정오표·표지그림·리포지터리 사본 등 같은 논문의 중복 레코드를 제외하는 목록이다.
+exclude_doi:
+  - "10.1038/s41467-021-26984-4"   # Author Correction — 10.1038/s41467-021-25324-w 의 정오표
+  - "10.1021/acsami.0c03447"       # Correction — Synergetic effect of porous elastomer 의 정오표
+  - "10.17615/20mt-rj52"           # UNC 리포지터리 사본 (Author Correction)
+  - "10.17615/gcrq-s677"           # UNC 리포지터리 사본 (Nat Commun 2021)
+  - "10.1002/adhm.202170042"       # Frontispiece — 10.1002/adhm.202001461 의 표지그림 레코드
+  - "10.1002/admt.202070013"       # Frontispiece — Electrochemical actuators 표지그림 레코드
+  - "10.1002/adhm.201970086"       # Frontispiece "Wearable Sensors:" — 10.1002/adhm.201900978 의 표지그림
+  - "10.1002/adhm.202000313"       # Adv Healthc Mater 9권(2020) 재수록 — 원논문은 10.1002/adhm.201900978 (8권, 2019)
+
+# DOI가 없는 항목은 OpenAlex ID(W로 시작)로 제외
+exclude_id:
+  # OpenAlex 데이터 오류. 2004년 수학 논문 레코드에 10.1021/acsami.0c00143 이
+  # 잘못 붙어 있어 같은 DOI 로 두 건이 조회된다. 정상 레코드는 W3007780519.
+  - "W32073247"
+
+# OpenAlex 메타데이터가 틀렸을 때 필드 단위로 덮어쓰기
+patch_by_doi: {}
+#  10.1126/sciadv.abj0694:
+#    venue: Science Advances
+
+# OpenAlex에 색인되지 않는 항목을 직접 추가 (학회 초록, 구두발표, 특허 등)
+manual: []
+#  - title: "Real-time intraoperative diagnosis of glioma using probe-based confocal laser endomicroscopy"
+#    authors: ["Kyuyoung Kim", "..."]
+#    venue: "대한뇌종양학회 학술대회"
+#    year: 2025
+#    date: "2025-04-01"
+#    type: "conference-abstract"
+#    is_first_author: true
