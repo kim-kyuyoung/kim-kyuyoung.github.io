@@ -3,6 +3,13 @@
 #
 # 목록의 기준은 ORCID 레코드다. ORCID 에 없는 본인 논문만 include_doi 에 적는다.
 
+# 사이트에서 professional 로 분류할 논문. 여기 없는 것은 전부 academic 으로 간다.
+# 브이픽스메디칼에서 수행한 임상·제품 관련 연구를 적는다.
+professional_doi:
+  - "10.3171/case25890"            # 2026 J Neurosurg Case Lessons — 교모세포종 절제연 평가
+  - "10.1038/s41698-024-00621-x"   # 2024 npj Precis Oncol — 위암 AI 실시간 조직병리
+  - "10.21873/invivo.13511"        # 2024 In Vivo — 위암 조직 실시간 조직학적 평가
+
 # ORCID 에 등록돼 있지 않은 본인 논문. DOI 를 적으면 목록에 포함된다.
 # 근본 해결은 orcid.org 에 직접 추가하는 것. 추가한 뒤에는 여기서 지워도 된다.
 include_doi:

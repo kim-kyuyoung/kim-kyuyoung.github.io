@@ -178,6 +178,7 @@ def apply_overrides(pubs: list[dict], ov: dict) -> list[dict]:
     exclude_doi = {norm_doi(d) for d in (ov.get("exclude_doi") or [])}
     exclude_id = set(ov.get("exclude_id") or [])
     patches = {norm_doi(k): v for k, v in (ov.get("patch_by_doi") or {}).items()}
+    professional = {norm_doi(d) for d in (ov.get("professional_doi") or [])}
 
     kept = []
     for p in pubs:
@@ -188,6 +189,7 @@ def apply_overrides(pubs: list[dict], ov: dict) -> list[dict]:
             continue
         if doi in patches:
             p.update(patches[doi])
+        p.setdefault("track", "professional" if doi in professional else "academic")
         kept.append(p)
 
     # OpenAlex가 색인하지 않는 것들(학회 초록, 구두발표, 프로시딩 등)을 수동 추가

@@ -25,8 +25,8 @@ ROOT = Path(__file__).resolve().parent.parent
 PUBS = ROOT / "data" / "publications.yaml"
 PAGE = ROOT / "index.html"
 
-START = "<!-- publications:start -->"
-END = "<!-- publications:end -->"
+# 트랙별로 블록이 하나씩 있다. 분류는 data/overrides.yaml 의 professional_doi 로 정한다.
+TRACKS = ("professional", "academic")
 
 # 저자 목록에서 본인을 굵게 표시하기 위한 표기 변형
 NAME_VARIANTS = {"kyuyoung kim", "kyu-young kim", "kyu young kim", "김규영"}
@@ -89,27 +89,34 @@ def main() -> int:
     pubs = doc.get("publications") or []
     pubs.sort(key=lambda p: (p.get("date") or "", p.get("year") or 0), reverse=True)
 
-    block = "\n".join([START, *(render(p) for p in pubs), END])
-
     page = PAGE.read_text(encoding="utf-8")
-    if START not in page or END not in page:
-        print(f"markers not found in {PAGE.name}", file=sys.stderr)
-        print(f"  need {START} and {END}", file=sys.stderr)
-        return 1
+    original = page
 
-    updated = re.sub(
-        re.escape(START) + r".*?" + re.escape(END),
-        lambda _: block,
-        page,
-        flags=re.DOTALL,
-    )
+    for track in TRACKS:
+        start = f"<!-- publications:{track}:start -->"
+        end = f"<!-- publications:{track}:end -->"
 
-    if updated == page:
-        print(f"  {PAGE.name} already up to date ({len(pubs)} publications)")
+        if start not in page or end not in page:
+            print(f"markers not found in {PAGE.name}: {start} / {end}", file=sys.stderr)
+            return 1
+
+        rows = [p for p in pubs if (p.get("track") or "academic") == track]
+        block = "\n".join([start, *(render(p) for p in rows), end])
+
+        page = re.sub(
+            re.escape(start) + r".*?" + re.escape(end),
+            lambda _: block,
+            page,
+            flags=re.DOTALL,
+        )
+        print(f"  {track:12} {len(rows)} publications")
+
+    if page == original:
+        print(f"  {PAGE.name} already up to date")
         return 0
 
-    PAGE.write_text(updated, encoding="utf-8")
-    print(f"  updated {PAGE.name} ({len(pubs)} publications)")
+    PAGE.write_text(page, encoding="utf-8")
+    print(f"  updated {PAGE.name}")
     return 0
 
 

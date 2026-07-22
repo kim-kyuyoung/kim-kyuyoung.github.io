@@ -25,6 +25,7 @@ publications:
   pmid: '41730199'
   cited_by_count: 0
   oa_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12927198/
+  track: professional
 - id: W4399678217
   title: Artificial intelligence-based real-time histopathology of gastric cancer using confocal laser
     endomicroscopy
@@ -53,6 +54,7 @@ publications:
   pmid: '38877301'
   cited_by_count: 16
   oa_url: https://doi.org/10.1038/s41698-024-00621-x
+  track: professional
 - id: W4394804441
   title: Liquid‐Metal‐Based Soft Pressure Sensor and Multidirectional Detection by Machine Learning
   authors:
@@ -71,6 +73,7 @@ publications:
   pmid: null
   cited_by_count: 22
   oa_url: https://doi.org/10.1002/admt.202302134
+  track: academic
 - id: W4392250677
   title: Real-time Histological Evaluation of Gastric Cancer Tissue by Using a Confocal Laser Endomicroscopic
     System
@@ -94,6 +97,7 @@ publications:
   pmid: '38418139'
   cited_by_count: 1
   oa_url: https://doi.org/10.21873/invivo.13511
+  track: professional
 - id: W4382203516
   title: A Wireless and Wearable Body-Pressure-Monitoring System for the Prevention of Pressure-Induced
     Skin Injuries
@@ -116,6 +120,7 @@ publications:
   pmid: '37368797'
   cited_by_count: 18
   oa_url: null
+  track: academic
 - id: W4319986446
   title: Wireless, multimodal sensors for continuous measurement of pressure, temperature, and hydration
     of patients in wheelchair
@@ -170,6 +175,7 @@ publications:
   pmid: null
   cited_by_count: 85
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
+  track: academic
 - id: W3206257055
   title: Customizable, conformal, and stretchable 3D electronics via predistorted pattern generation and
     thermoforming
@@ -196,6 +202,7 @@ publications:
   pmid: '34644113'
   cited_by_count: 62
   oa_url: https://doi.org/10.1126/sciadv.abj0694
+  track: academic
 - id: W3193659330
   title: Battery-free, wireless soft sensors for continuous multi-site measurements of pressure and temperature
     from patients at risk for pressure injuries
@@ -268,6 +275,7 @@ publications:
   pmid: '34429436'
   cited_by_count: 194
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
+  track: academic
 - id: W3194273227
   title: Sensitivity-Controllable Liquid-Metal-Based Pressure Sensor for Wearable Applications
   authors:
@@ -288,6 +296,7 @@ publications:
   pmid: null
   cited_by_count: 54
   oa_url: null
+  track: academic
 - id: W3154182465
   title: Fast Flexible Bottom‐Gated Hydrogen Sensor Based on Silicon Nanomembrane
   authors:
@@ -305,6 +314,7 @@ publications:
   pmid: null
   cited_by_count: 3
   oa_url: null
+  track: academic
 - id: W3134309900
   title: Ultra‐Wide Range Pressure Sensor Based on a Microstructured Conductive Nanocomposite for Wearable
     Workout Monitoring
@@ -330,6 +340,7 @@ publications:
   pmid: '33694309'
   cited_by_count: 69
   oa_url: null
+  track: academic
 - id: W3165117702
   title: All-soft multiaxial force sensor based on liquid metal for electronic skin
   authors:
@@ -349,6 +360,7 @@ publications:
   pmid: null
   cited_by_count: 45
   oa_url: https://doi.org/10.1186/s40486-020-00126-9
+  track: academic
 - id: W3040283350
   title: Microdome-Induced Strain Localization for Biaxial Strain Decoupling toward Stretchable and Wearable
     Human Motion Detection
@@ -370,6 +382,7 @@ publications:
   pmid: '32610911'
   cited_by_count: 33
   oa_url: null
+  track: academic
 - id: W3023299168
   title: Wearable self-powered pressure sensor by integration of piezo-transmittance microporous elastomer
     with organic solar cell
@@ -398,6 +411,7 @@ publications:
   pmid: null
   cited_by_count: 79
   oa_url: null
+  track: academic
 - id: W3007780519
   title: Microporous Elastomer Filter Coated with Metal Organic Frameworks for Improved Selectivity and
     Stability of Metal Oxide Gas Sensors
@@ -420,6 +434,7 @@ publications:
   pmid: '32073247'
   cited_by_count: 62
   oa_url: null
+  track: academic
 - id: W3005220049
   title: Ultrathin, Biocompatible, and Flexible Pressure Sensor with a Wide Pressure Range and Its Biomedical
     Application
@@ -439,6 +454,7 @@ publications:
   pmid: '32020796'
   cited_by_count: 105
   oa_url: null
+  track: academic
 - id: W2995757910
   title: Synergetic Effect of Porous Elastomer and Percolation of Carbon Nanotube Filler toward High Performance
     Capacitive Pressure Sensors
@@ -464,6 +480,7 @@ publications:
   pmid: '31825585'
   cited_by_count: 195
   oa_url: null
+  track: academic
 - id: W2996391250
   title: Heterogeneous Conductance‐Based Locally Shape‐Morphable Soft Electrothermal Actuator
   authors:
@@ -488,6 +505,7 @@ publications:
   pmid: null
   cited_by_count: 41
   oa_url: null
+  track: academic
 - id: W2979796094
   title: 'Highly Sensitive and Wearable Liquid Metal‐Based Pressure Sensor for Health Monitoring Applications:
     Integration of a 3D‐Printed Microbump Array with the Microchannel'
@@ -510,6 +528,7 @@ publications:
   pmid: '31596545'
   cited_by_count: 183
   oa_url: null
+  track: academic
 - id: W2949636083
   title: Wearable, Ultrawide-Range, and Bending-Insensitive Pressure Sensor Based on Carbon Nanotube Network-Coated
     Porous Elastomer Sponges for Human Interface and Healthcare Devices
@@ -534,6 +553,7 @@ publications:
   pmid: '31180635'
   cited_by_count: 236
   oa_url: https://eprints.gla.ac.uk/281661/
+  track: academic
 - id: W2969513234
   title: Strain-Insensitive Soft Pressure Sensor for Health Monitoring Application Using 3D-Printed Microchannel
     Mold and Liquid Metal
@@ -556,6 +576,7 @@ publications:
   pmid: null
   cited_by_count: 6
   oa_url: null
+  track: academic
 - id: W2969667473
   title: Wide Range-Sensitive, Bending-Insensitive Pressure Detection and Application to Wearable Healthcare
     Device
@@ -580,6 +601,7 @@ publications:
   pmid: null
   cited_by_count: 2
   oa_url: https://eprints.gla.ac.uk/281660/
+  track: academic
 - id: W2980681019
   title: Wearable Soft Microfluidic Pressure Sensor Using 3D-Printed Mold for Health Monitoring
   authors:
@@ -600,6 +622,7 @@ publications:
   pmid: null
   cited_by_count: 2
   oa_url: null
+  track: academic
 - id: W2981235273
   title: Stretchable fabric heater based on silver nanowire, carbon nanotube composites
   authors:
@@ -619,6 +642,7 @@ publications:
   pmid: null
   cited_by_count: 2
   oa_url: null
+  track: academic
 - id: W2980450362
   title: Flexible Pressure Sensor Based on Porous Dielectric Elastomer Containing Conductive Filler
   authors:
@@ -636,6 +660,7 @@ publications:
   pmid: null
   cited_by_count: 0
   oa_url: null
+  track: academic
 - id: W3082087128
   title: Wearable Force Sensor Using 3D-printed Mold and Liquid Metal
   authors:
@@ -655,6 +680,7 @@ publications:
   pmid: null
   cited_by_count: 0
   oa_url: https://koasas.kaist.ac.kr/handle/10203/271352
+  track: academic
 - id: W2790047986
   title: High-Sensitivity and Low-Power Flexible Schottky Hydrogen Sensor Based on Silicon Nanomembrane
   authors:
@@ -673,6 +699,7 @@ publications:
   pmid: '29578325'
   cited_by_count: 50
   oa_url: null
+  track: academic
 - id: W2782473091
   title: Biopsy Needle Integrated with Electrical Impedance Sensing Microelectrode Array towards Real-time
     Needle Guidance and Tissue Discrimination
@@ -693,6 +720,7 @@ publications:
   pmid: '29321531'
   cited_by_count: 56
   oa_url: https://doi.org/10.1038/s41598-017-18360-4
+  track: academic
 - id: W2798797308
   title: Development of thin film based flexible pressure sensor and biomedical application to real-time
     pressure monitoring during radiofrequency ablation
@@ -711,6 +739,7 @@ publications:
   pmid: null
   cited_by_count: 0
   oa_url: null
+  track: academic
 - id: W2734870921
   title: 3D printing of multiaxial force sensors using carbon nanotube (CNT)/thermoplastic polyurethane
     (TPU) filaments
@@ -731,6 +760,7 @@ publications:
   pmid: null
   cited_by_count: 311
   oa_url: null
+  track: academic
 - id: W2593305914
   title: Surface micro-structured, stretchable strain sensor towards biaxial sensitivity and performance
     enhancement
@@ -750,3 +780,4 @@ publications:
   pmid: null
   cited_by_count: 3
   oa_url: null
+  track: academic
