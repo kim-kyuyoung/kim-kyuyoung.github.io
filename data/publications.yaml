@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 32
-  total_citations: 1952
+  total_citations: 1955
   h_index: 18
   i10_index: 21
   first_author_count: 6
@@ -52,7 +52,7 @@ publications:
   type: article
   doi: 10.1038/s41698-024-00621-x
   pmid: '38877301'
-  cited_by_count: 16
+  cited_by_count: 17
   oa_url: https://doi.org/10.1038/s41698-024-00621-x
   track: professional
 - id: W4394804441
@@ -222,7 +222,7 @@ publications:
   type: article
   doi: 10.1126/sciadv.abj0694
   pmid: '34644113'
-  cited_by_count: 62
+  cited_by_count: 63
   oa_url: https://doi.org/10.1126/sciadv.abj0694
   track: academic
 - id: W3193659330
@@ -500,7 +500,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 195
+  cited_by_count: 196
   oa_url: null
   track: academic
 - id: W2996391250
