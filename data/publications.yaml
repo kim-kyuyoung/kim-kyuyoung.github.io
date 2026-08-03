@@ -2,8 +2,8 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 32
-  total_citations: 1955
-  h_index: 18
+  total_citations: 1967
+  h_index: 19
   i10_index: 21
   first_author_count: 6
 publications:
@@ -71,7 +71,7 @@ publications:
   type: article
   doi: 10.1002/admt.202302134
   pmid: null
-  cited_by_count: 22
+  cited_by_count: 23
   oa_url: https://doi.org/10.1002/admt.202302134
   track: academic
 - id: W4392250677
@@ -118,7 +118,7 @@ publications:
   type: article
   doi: 10.1109/tbcas.2023.3288126
   pmid: '37368797'
-  cited_by_count: 18
+  cited_by_count: 20
   oa_url: null
   track: academic
 - id: W4319986446
@@ -295,7 +295,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 194
+  cited_by_count: 195
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
 - id: W3194273227
@@ -316,7 +316,7 @@ publications:
   type: article
   doi: 10.1021/acsaelm.1c00546
   pmid: null
-  cited_by_count: 54
+  cited_by_count: 55
   oa_url: null
   track: academic
 - id: W3154182465
@@ -380,7 +380,7 @@ publications:
   type: article
   doi: 10.1186/s40486-020-00126-9
   pmid: null
-  cited_by_count: 45
+  cited_by_count: 46
   oa_url: https://doi.org/10.1186/s40486-020-00126-9
   track: academic
 - id: W3040283350
@@ -431,7 +431,7 @@ publications:
   type: article
   doi: 10.1016/j.nanoen.2020.104749
   pmid: null
-  cited_by_count: 79
+  cited_by_count: 80
   oa_url: null
   track: academic
 - id: W3007780519
@@ -474,7 +474,7 @@ publications:
   type: article
   doi: 10.1021/acssensors.9b02260
   pmid: '32020796'
-  cited_by_count: 105
+  cited_by_count: 106
   oa_url: null
   track: academic
 - id: W2995757910
@@ -500,7 +500,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 196
+  cited_by_count: 198
   oa_url: null
   track: academic
 - id: W2996391250
@@ -548,7 +548,7 @@ publications:
   type: article
   doi: 10.1002/adhm.201900978
   pmid: '31596545'
-  cited_by_count: 183
+  cited_by_count: 184
   oa_url: null
   track: academic
 - id: W2949636083
@@ -573,7 +573,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b07636
   pmid: '31180635'
-  cited_by_count: 236
+  cited_by_count: 237
   oa_url: https://eprints.gla.ac.uk/281661/
   track: academic
 - id: W2969513234
