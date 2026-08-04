@@ -110,16 +110,16 @@ h1 .ko {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem 0.5rem;
   margin: 3rem 0 0;
   padding: 1.75rem 0;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
 }
-.stats div { text-align: center; padding: 0 0.5rem; }
+.stats div { text-align: center; padding: 0 0.25rem; }
 .stats .fig {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
@@ -127,14 +127,18 @@ h1 .ko {
 .stats .cap {
   margin-top: 0.35rem;
   font-family: var(--sans);
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   font-weight: 600;
+  line-height: 1.35;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--faint);
 }
-@media (max-width: 34rem) {
-  .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1px; }
+@media (max-width: 40rem) {
+  .stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 26rem) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ---- IF badge -------------------------------------------------------- */
@@ -259,6 +263,7 @@ footer {
   <div><div class="fig">25</div><div class="cap">Peer-reviewed</div></div>
   <div><div class="fig">2,300+</div><div class="cap">Citations</div></div>
   <div><div class="fig">19</div><div class="cap">h-index</div></div>
+  <div><div class="fig">11</div><div class="cap">Patents<br>(granted)</div></div>
   <div><div class="fig">₩6B+</div><div class="cap">Gov. R&amp;D Funding<br>(institution&nbsp;share)</div></div>
 </div>
 
