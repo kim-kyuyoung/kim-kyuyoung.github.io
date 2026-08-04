@@ -66,24 +66,90 @@ a:hover { text-decoration-color: var(--muted); }
 
 /* ---- header ---------------------------------------------------------- */
 
+.eyebrow {
+  margin: 0 0 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--faint);
+}
 h1 {
   margin: 0;
-  font-size: 1.75rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
+  font-size: clamp(2.75rem, 9vw, 4.25rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+h1 .surname { font-style: italic; }
+h1 .ko {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.32em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--faint);
 }
 .sub {
-  margin: 0.3rem 0 0;
-  color: var(--muted);
-  font-size: 1rem;
+  margin: 1.5rem 0 0;
+  color: var(--fg);
+  font-size: 1.05rem;
 }
+.sub .org { color: var(--muted); }
 .contact {
-  margin: 1.75rem 0 0;
+  margin: 1.25rem 0 0;
   font-family: var(--sans);
   font-size: 0.85rem;
   color: var(--muted);
 }
 .contact a { color: var(--muted); }
+
+/* ---- stats bar ------------------------------------------------------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 3rem 0 0;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.stats div { text-align: center; padding: 0 0.5rem; }
+.stats .fig {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.stats .cap {
+  margin-top: 0.35rem;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+}
+@media (max-width: 34rem) {
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1px; }
+}
+
+/* ---- IF badge -------------------------------------------------------- */
+
+.if {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  background: var(--rule);
+  padding: 0.05em 0.45em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
 
 /* ---- sections -------------------------------------------------------- */
 
@@ -161,8 +227,13 @@ footer {
      ==================================================================== -->
 
 <header>
-  <h1>Kyuyoung Kim <span style="color:var(--faint);font-weight:400">김규영</span></h1>
-  <p class="sub">CTO of VPIX Medical Inc.</p>
+  <p class="eyebrow">Confocal Endomicroscopy · Clinical Strategy · Digital Biopsy</p>
+
+  <h1><span class="given">Kyuyoung</span> <span class="surname">Kim</span>
+      <span class="ko">김규영</span></h1>
+
+  <p class="sub">Chief Technology Officer
+     <span class="org">· VPIX Medical Inc.</span></p>
 
   <p class="contact">
     <a href="mailto:ky.kim@vpixmedical.com">ky.kim@vpixmedical.com</a>
@@ -179,6 +250,17 @@ footer {
          이 자리에 <a href="https://orcid.org/0000-0001-8011-3539">ORCID</a> 를 넣으면 된다. -->
   </p>
 </header>
+
+<!-- 통계 바. 손으로 관리한다.
+     · Peer-reviewed / Citations / h-index 는 Google Scholar 기준. 값이 바뀌면 여기서 고친다.
+       (scholar.google.com/citations?user=l4jY7icAAAAJ 에서 확인)
+     · Government Grants 는 주관연구책임자(PI) 로 수주한 정부과제. 총액은 KY 확인 후 기입. -->
+<div class="stats">
+  <div><div class="fig">32</div><div class="cap">Peer-reviewed</div></div>
+  <div><div class="fig">2,300+</div><div class="cap">Citations</div></div>
+  <div><div class="fig">19</div><div class="cap">h-index</div></div>
+  <div><div class="fig">7</div><div class="cap">Gov. Grants&nbsp;(PI)</div></div>
+</div>
 
 <section>
   <h2>experience</h2>
@@ -199,9 +281,9 @@ footer {
   <ul class="list">
 <!-- publications:professional:start -->
     <li><span class="what"><a href="https://doi.org/10.3171/case25890">Real-time intraoperative confocal laser endomicroscopy with on-site neuropathologist consultation for glioma margin assessment: illustrative case</a></span><span class="note">Sun Mo Nam, <span class="me">Kyuyoung Kim</span>, Jae-Kyung Won, Chul-Kee Park</span><span class="note"><span class="venue">Journal of Neurosurgery Case Lessons</span>, 2026</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1038/s41698-024-00621-x">Artificial intelligence-based real-time histopathology of gastric cancer using confocal laser endomicroscopy</a></span><span class="note">Haeyon Cho, Damin Moon, So Mi Heo, Jinah Chu, Hyunsik Bae, Sangjoon Choi et al.</span><span class="note"><span class="venue">npj Precision Oncology</span>, 2024</span></li>
-    <li><span class="what"><a href="https://doi.org/10.21873/invivo.13511">Real-time Histological Evaluation of Gastric Cancer Tissue by Using a Confocal Laser Endomicroscopic System</a></span><span class="note">Hyunsik Bae, Haeyon Cho, Yeong-Dae Jo, So Mi Heo, Jinah Chu, Sangjoon Choi et al.</span><span class="note"><span class="venue">In Vivo</span>, 2024</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1364/boe.447558">Handheld laser scanning microscope catheter for real-time and in vivo confocal microscopy using a high definition high frame rate Lissajous MEMS mirror</a></span><span class="note">Jaehun Jeon, Hyunwoo Kim, Hyunwoo Jang, Kyungmin Hwang, <span class="me">Kyuyoung Kim</span>, Young-Gyun Park et al.</span><span class="note"><span class="venue">Biomedical Optics Express</span>, 2022</span></li>
+    <li><span class="what"><a href="https://doi.org/10.1038/s41698-024-00621-x">Artificial intelligence-based real-time histopathology of gastric cancer using confocal laser endomicroscopy</a></span><span class="note">Haeyon Cho, Damin Moon, So Mi Heo, Jinah Chu, Hyunsik Bae, Sangjoon Choi et al.</span><span class="note"><span class="venue">npj Precision Oncology</span>, 2024 <span class="if">IF 6.8</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.21873/invivo.13511">Real-time Histological Evaluation of Gastric Cancer Tissue by Using a Confocal Laser Endomicroscopic System</a></span><span class="note">Hyunsik Bae, Haeyon Cho, Yeong-Dae Jo, So Mi Heo, Jinah Chu, Sangjoon Choi et al.</span><span class="note"><span class="venue">In Vivo</span>, 2024 <span class="if">IF 1.9</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1364/boe.447558">Handheld laser scanning microscope catheter for real-time and in vivo confocal microscopy using a high definition high frame rate Lissajous MEMS mirror</a></span><span class="note">Jaehun Jeon, Hyunwoo Kim, Hyunwoo Jang, Kyungmin Hwang, <span class="me">Kyuyoung Kim</span>, Young-Gyun Park et al.</span><span class="note"><span class="venue">Biomedical Optics Express</span>, 2022 <span class="if">IF 3.2</span></span></li>
 <!-- publications:professional:end -->
   </ul>
 </section>
@@ -234,33 +316,33 @@ footer {
   <h2>publications <span class="n">— academic</span></h2>
   <ul class="list">
 <!-- publications:academic:start -->
-    <li><span class="what"><a href="https://doi.org/10.1002/admt.202302134">Liquid‐Metal‐Based Soft Pressure Sensor and Multidirectional Detection by Machine Learning</a></span><span class="note">Osman Gul, Jeongnam Kim, <span class="me">Kyuyoung Kim</span>, Hye Jin Kim, Inkyu Park</span><span class="note"><span class="venue">Advanced Materials Technologies</span>, 2024</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1109/tbcas.2023.3288126">A Wireless and Wearable Body-Pressure-Monitoring System for the Prevention of Pressure-Induced Skin Injuries</a></span><span class="note">Hyunwoo Park, <span class="me">Kyuyoung Kim</span>, Soon-Jae Kweon, Osman Gul, Jungrak Choi, Yong Suk Oh et al.</span><span class="note"><span class="venue">IEEE Transactions on Biomedical Circuits and Systems</span>, 2023</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1038/s41528-023-00238-3">Wireless, multimodal sensors for continuous measurement of pressure, temperature, and hydration of patients in wheelchair</a></span><span class="note">Seokjoo Cho, Hyeonseok Han, Hyunwoo Park, Sung‐Uk Lee, Jae-Hwan Kim, Sung Woo Jeon et al.</span><span class="note"><span class="venue">npj Flexible Electronics</span>, 2023</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1126/sciadv.abj0694">Customizable, conformal, and stretchable 3D electronics via predistorted pattern generation and thermoforming</a></span><span class="note">Jungrak Choi, Chankyu Han, Seokjoo Cho, <span class="me">Kyuyoung Kim</span>, Junseong Ahn, Dionisio Del Orbe et al.</span><span class="note"><span class="venue">Science Advances</span>, 2021</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1038/s41467-021-25324-w">Battery-free, wireless soft sensors for continuous multi-site measurements of pressure and temperature from patients at risk for pressure injuries</a></span><span class="note">Yong Suk Oh, Jae-Hwan Kim, Zhaoqian Xie, Seokjoo Cho, Hyeonseok Han, Sung Woo Jeon et al.</span><span class="note"><span class="venue">Nature Communications</span>, 2021</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acsaelm.1c00546">Sensitivity-Controllable Liquid-Metal-Based Pressure Sensor for Wearable Applications</a></span><span class="note">Osman Gul, <span class="me">Kyuyoung Kim</span>, Jimin Gu, Jungrak Choi, Dionisio Del Orbe, Junseong Ahn et al.</span><span class="note"><span class="venue">ACS Applied Electronic Materials</span>, 2021</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1002/admt.202000847">Fast Flexible Bottom‐Gated Hydrogen Sensor Based on Silicon Nanomembrane</a></span><span class="note">Minkyu Cho, Incheol Cho, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note"><span class="venue">Advanced Materials Technologies</span>, 2021</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1002/adhm.202001461">Ultra‐Wide Range Pressure Sensor Based on a Microstructured Conductive Nanocomposite for Wearable Workout Monitoring</a></span><span class="note">Yongrok Jeong, Jimin Gu, Jaiyeul Byun, Junseong Ahn, Jaebum Byun, <span class="me">Kyuyoung Kim</span> et al.</span><span class="note"><span class="venue">Advanced Healthcare Materials</span>, 2021</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1186/s40486-020-00126-9">All-soft multiaxial force sensor based on liquid metal for electronic skin</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Junseong Ahn, Yongrok Jeong, Jungrak Choi, Osman Gul, Inkyu Park</span><span class="note"><span class="venue">Micro and Nano Systems Letters</span>, 2021</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acs.langmuir.0c01450">Microdome-Induced Strain Localization for Biaxial Strain Decoupling toward Stretchable and Wearable Human Motion Detection</a></span><span class="note">Min Seong Kim, <span class="me">Kyuyoung Kim</span>, Donguk Kwon, Seung‐Hwan Kim, Jimin Gu, Yong Suk Oh et al.</span><span class="note"><span class="venue">Langmuir</span>, 2020</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1016/j.nanoen.2020.104749">Wearable self-powered pressure sensor by integration of piezo-transmittance microporous elastomer with organic solar cell</a></span><span class="note">Jungrak Choi, Donguk Kwon, Byeongsu Kim, Kyungnam Kang, Jimin Gu, Jihwan Jo et al.</span><span class="note"><span class="venue">Nano Energy</span>, 2020</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acsami.0c00143">Microporous Elastomer Filter Coated with Metal Organic Frameworks for Improved Selectivity and Stability of Metal Oxide Gas Sensors</a></span><span class="note">Kyoungjin Hwang, Junseong Ahn, Incheol Cho, Kyungnam Kang, <span class="me">Kyuyoung Kim</span>, Jungrak Choi et al.</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2020</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acssensors.9b02260">Ultrathin, Biocompatible, and Flexible Pressure Sensor with a Wide Pressure Range and Its Biomedical Application</a></span><span class="note">Yongrok Jeong, Jaeho Park, Jinwoo Lee, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note"><span class="venue">ACS Sensors</span>, 2020</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acsami.9b20097">Synergetic Effect of Porous Elastomer and Percolation of Carbon Nanotube Filler toward High Performance Capacitive Pressure Sensors</a></span><span class="note">Jungrak Choi, Donguk Kwon, <span class="me">Kyuyoung Kim</span>, Jaeho Park, Dionisio Del Orbe, Jimin Gu et al.</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2019</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1002/admt.201900997">Heterogeneous Conductance‐Based Locally Shape‐Morphable Soft Electrothermal Actuator</a></span><span class="note">Junseong Ahn, Yongrok Jeong, Zhi‐Jun Zhao, Soonhyoung Hwang, <span class="me">Kyuyoung Kim</span>, Jiwoo Ko et al.</span><span class="note"><span class="venue">Advanced Materials Technologies</span>, 2019</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1002/adhm.201900978">Highly Sensitive and Wearable Liquid Metal‐Based Pressure Sensor for Health Monitoring Applications: Integration of a 3D‐Printed Microbump Array with the Microchannel</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Jungrak Choi, Yongrok Jeong, Incheol Cho, Minseong Kim, Seung‐Hwan Kim et al.</span><span class="note"><span class="venue">Advanced Healthcare Materials</span>, 2019</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acsami.9b07636">Wearable, Ultrawide-Range, and Bending-Insensitive Pressure Sensor Based on Carbon Nanotube Network-Coated Porous Elastomer Sponges for Human Interface and Healthcare Devices</a></span><span class="note">Seung‐Hwan Kim, Morteza Amjadi, Tae‐Ik Lee, Yongrok Jeong, Donguk Kwon, Min Seong Kim et al.</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2019</span></li>
+    <li><span class="what"><a href="https://doi.org/10.1002/admt.202302134">Liquid‐Metal‐Based Soft Pressure Sensor and Multidirectional Detection by Machine Learning</a></span><span class="note">Osman Gul, Jeongnam Kim, <span class="me">Kyuyoung Kim</span>, Hye Jin Kim, Inkyu Park</span><span class="note"><span class="venue">Advanced Materials Technologies</span>, 2024 <span class="if">IF 6.4</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1109/tbcas.2023.3288126">A Wireless and Wearable Body-Pressure-Monitoring System for the Prevention of Pressure-Induced Skin Injuries</a></span><span class="note">Hyunwoo Park, <span class="me">Kyuyoung Kim</span>, Soon-Jae Kweon, Osman Gul, Jungrak Choi, Yong Suk Oh et al.</span><span class="note"><span class="venue">IEEE Transactions on Biomedical Circuits and Systems</span>, 2023 <span class="if">IF 4.0</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1038/s41528-023-00238-3">Wireless, multimodal sensors for continuous measurement of pressure, temperature, and hydration of patients in wheelchair</a></span><span class="note">Seokjoo Cho, Hyeonseok Han, Hyunwoo Park, Sung‐Uk Lee, Jae-Hwan Kim, Sung Woo Jeon et al.</span><span class="note"><span class="venue">npj Flexible Electronics</span>, 2023 <span class="if">IF 11.6</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1126/sciadv.abj0694">Customizable, conformal, and stretchable 3D electronics via predistorted pattern generation and thermoforming</a></span><span class="note">Jungrak Choi, Chankyu Han, Seokjoo Cho, <span class="me">Kyuyoung Kim</span>, Junseong Ahn, Dionisio Del Orbe et al.</span><span class="note"><span class="venue">Science Advances</span>, 2021 <span class="if">IF 11.7</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1038/s41467-021-25324-w">Battery-free, wireless soft sensors for continuous multi-site measurements of pressure and temperature from patients at risk for pressure injuries</a></span><span class="note">Yong Suk Oh, Jae-Hwan Kim, Zhaoqian Xie, Seokjoo Cho, Hyeonseok Han, Sung Woo Jeon et al.</span><span class="note"><span class="venue">Nature Communications</span>, 2021 <span class="if">IF 14.7</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acsaelm.1c00546">Sensitivity-Controllable Liquid-Metal-Based Pressure Sensor for Wearable Applications</a></span><span class="note">Osman Gul, <span class="me">Kyuyoung Kim</span>, Jimin Gu, Jungrak Choi, Dionisio Del Orbe, Junseong Ahn et al.</span><span class="note"><span class="venue">ACS Applied Electronic Materials</span>, 2021 <span class="if">IF 4.3</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1002/admt.202000847">Fast Flexible Bottom‐Gated Hydrogen Sensor Based on Silicon Nanomembrane</a></span><span class="note">Minkyu Cho, Incheol Cho, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note"><span class="venue">Advanced Materials Technologies</span>, 2021 <span class="if">IF 6.4</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1002/adhm.202001461">Ultra‐Wide Range Pressure Sensor Based on a Microstructured Conductive Nanocomposite for Wearable Workout Monitoring</a></span><span class="note">Yongrok Jeong, Jimin Gu, Jaiyeul Byun, Junseong Ahn, Jaebum Byun, <span class="me">Kyuyoung Kim</span> et al.</span><span class="note"><span class="venue">Advanced Healthcare Materials</span>, 2021 <span class="if">IF 10.0</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1186/s40486-020-00126-9">All-soft multiaxial force sensor based on liquid metal for electronic skin</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Junseong Ahn, Yongrok Jeong, Jungrak Choi, Osman Gul, Inkyu Park</span><span class="note"><span class="venue">Micro and Nano Systems Letters</span>, 2021 <span class="if">IF 2.5</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acs.langmuir.0c01450">Microdome-Induced Strain Localization for Biaxial Strain Decoupling toward Stretchable and Wearable Human Motion Detection</a></span><span class="note">Min Seong Kim, <span class="me">Kyuyoung Kim</span>, Donguk Kwon, Seung‐Hwan Kim, Jimin Gu, Yong Suk Oh et al.</span><span class="note"><span class="venue">Langmuir</span>, 2020 <span class="if">IF 3.7</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1016/j.nanoen.2020.104749">Wearable self-powered pressure sensor by integration of piezo-transmittance microporous elastomer with organic solar cell</a></span><span class="note">Jungrak Choi, Donguk Kwon, Byeongsu Kim, Kyungnam Kang, Jimin Gu, Jihwan Jo et al.</span><span class="note"><span class="venue">Nano Energy</span>, 2020 <span class="if">IF 16.8</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acsami.0c00143">Microporous Elastomer Filter Coated with Metal Organic Frameworks for Improved Selectivity and Stability of Metal Oxide Gas Sensors</a></span><span class="note">Kyoungjin Hwang, Junseong Ahn, Incheol Cho, Kyungnam Kang, <span class="me">Kyuyoung Kim</span>, Jungrak Choi et al.</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2020 <span class="if">IF 8.3</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acssensors.9b02260">Ultrathin, Biocompatible, and Flexible Pressure Sensor with a Wide Pressure Range and Its Biomedical Application</a></span><span class="note">Yongrok Jeong, Jaeho Park, Jinwoo Lee, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note"><span class="venue">ACS Sensors</span>, 2020 <span class="if">IF 8.2</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acsami.9b20097">Synergetic Effect of Porous Elastomer and Percolation of Carbon Nanotube Filler toward High Performance Capacitive Pressure Sensors</a></span><span class="note">Jungrak Choi, Donguk Kwon, <span class="me">Kyuyoung Kim</span>, Jaeho Park, Dionisio Del Orbe, Jimin Gu et al.</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2019 <span class="if">IF 8.3</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1002/admt.201900997">Heterogeneous Conductance‐Based Locally Shape‐Morphable Soft Electrothermal Actuator</a></span><span class="note">Junseong Ahn, Yongrok Jeong, Zhi‐Jun Zhao, Soonhyoung Hwang, <span class="me">Kyuyoung Kim</span>, Jiwoo Ko et al.</span><span class="note"><span class="venue">Advanced Materials Technologies</span>, 2019 <span class="if">IF 6.4</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1002/adhm.201900978">Highly Sensitive and Wearable Liquid Metal‐Based Pressure Sensor for Health Monitoring Applications: Integration of a 3D‐Printed Microbump Array with the Microchannel</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Jungrak Choi, Yongrok Jeong, Incheol Cho, Minseong Kim, Seung‐Hwan Kim et al.</span><span class="note"><span class="venue">Advanced Healthcare Materials</span>, 2019 <span class="if">IF 10.0</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acsami.9b07636">Wearable, Ultrawide-Range, and Bending-Insensitive Pressure Sensor Based on Carbon Nanotube Network-Coated Porous Elastomer Sponges for Human Interface and Healthcare Devices</a></span><span class="note">Seung‐Hwan Kim, Morteza Amjadi, Tae‐Ik Lee, Yongrok Jeong, Donguk Kwon, Min Seong Kim et al.</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2019 <span class="if">IF 8.3</span></span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/transducers.2019.8808472">Strain-Insensitive Soft Pressure Sensor for Health Monitoring Application Using 3D-Printed Microchannel Mold and Liquid Metal</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Jungrak Choi, Yongrok Jeong, Minseong Kim, Incheol Cho, Seung-Hwan Kim et al.</span><span class="note">2019</span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/transducers.2019.8808529">Wide Range-Sensitive, Bending-Insensitive Pressure Detection and Application to Wearable Healthcare Device</a></span><span class="note">Seung-Hwan Kim, Morteza Amjadi, Tae‐Ik Lee, Yongrok Jeong, Donguk Kwon, Min Seong Kim et al.</span><span class="note">2019</span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/memsys.2019.8870758">Wearable Soft Microfluidic Pressure Sensor Using 3D-Printed Mold for Health Monitoring</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Jungrak Choi, Yongrok Jeong, Minseong Kim, Jaeho Park, Yongsuk Oh et al.</span><span class="note">2019</span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/memsys.2019.8870720">Stretchable fabric heater based on silver nanowire, carbon nanotube composites</a></span><span class="note">Junseong Ahn, Jimin Gu, Yongrok Jeong, <span class="me">Kyuyoung Kim</span>, Jun‐Ho Jeong, Inkyu Park</span><span class="note">2019</span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/memsys.2019.8870802">Flexible Pressure Sensor Based on Porous Dielectric Elastomer Containing Conductive Filler</a></span><span class="note">Jungrak Choi, <span class="me">Kyuyoung Kim</span>, Yongsuk Oh, Inkyu Park</span><span class="note">2019</span></li>
     <li><span class="what"><a href="https://doi.org/10.5369/jsst.2019.28.3.198">Wearable Force Sensor Using 3D-printed Mold and Liquid Metal</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Choi jungrak, Yongrok Jeong, Minseong Kim, Seung Hwan Kim, Inkyu Park</span><span class="note"><span class="venue">Journal of Sensor Science and Technology</span>, 2019</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1021/acsami.8b01583">High-Sensitivity and Low-Power Flexible Schottky Hydrogen Sensor Based on Silicon Nanomembrane</a></span><span class="note">Minkyu Cho, Jeonghun Yun, Donguk Kwon, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2018</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1038/s41598-017-18360-4">Biopsy Needle Integrated with Electrical Impedance Sensing Microelectrode Array towards Real-time Needle Guidance and Tissue Discrimination</a></span><span class="note">Jaeho Park, Won‐Mook Choi, <span class="me">Kyuyoung Kim</span>, Won‐Il Jeong, Joon-Beom Seo, Inkyu Park</span><span class="note"><span class="venue">Scientific Reports</span>, 2018</span></li>
+    <li><span class="what"><a href="https://doi.org/10.1021/acsami.8b01583">High-Sensitivity and Low-Power Flexible Schottky Hydrogen Sensor Based on Silicon Nanomembrane</a></span><span class="note">Minkyu Cho, Jeonghun Yun, Donguk Kwon, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note"><span class="venue">ACS Applied Materials &amp; Interfaces</span>, 2018 <span class="if">IF 8.3</span></span></li>
+    <li><span class="what"><a href="https://doi.org/10.1038/s41598-017-18360-4">Biopsy Needle Integrated with Electrical Impedance Sensing Microelectrode Array towards Real-time Needle Guidance and Tissue Discrimination</a></span><span class="note">Jaeho Park, Won‐Mook Choi, <span class="me">Kyuyoung Kim</span>, Won‐Il Jeong, Joon-Beom Seo, Inkyu Park</span><span class="note"><span class="venue">Scientific Reports</span>, 2018 <span class="if">IF 3.8</span></span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/memsys.2018.8346553">Development of thin film based flexible pressure sensor and biomedical application to real-time pressure monitoring during radiofrequency ablation</a></span><span class="note">Yongrok Jeong, Jaeho Park, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note">2018</span></li>
-    <li><span class="what"><a href="https://doi.org/10.1016/j.sna.2017.07.020">3D printing of multiaxial force sensors using carbon nanotube (CNT)/thermoplastic polyurethane (TPU) filaments</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Jaeho Park, Ji-hoon Suh, Min-Seong Kim, Yongrok Jeong, Inkyu Park</span><span class="note"><span class="venue">Sensors and Actuators A Physical</span>, 2017</span></li>
+    <li><span class="what"><a href="https://doi.org/10.1016/j.sna.2017.07.020">3D printing of multiaxial force sensors using carbon nanotube (CNT)/thermoplastic polyurethane (TPU) filaments</a></span><span class="note"><span class="me">Kyuyoung Kim</span>, Jaeho Park, Ji-hoon Suh, Min-Seong Kim, Yongrok Jeong, Inkyu Park</span><span class="note"><span class="venue">Sensors and Actuators A Physical</span>, 2017 <span class="if">IF 4.3</span></span></li>
     <li><span class="what"><a href="https://doi.org/10.1109/memsys.2017.7863591">Surface micro-structured, stretchable strain sensor towards biaxial sensitivity and performance enhancement</a></span><span class="note">Min Seong Kim, Donguk Kwon, Seung‐Hwan Kim, <span class="me">Kyuyoung Kim</span>, Inkyu Park</span><span class="note">2017</span></li>
 <!-- publications:academic:end -->
   </ul>

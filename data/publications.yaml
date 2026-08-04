@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 32
-  total_citations: 1967
+  total_citations: 1968
   h_index: 19
   i10_index: 21
   first_author_count: 6
@@ -55,6 +55,7 @@ publications:
   cited_by_count: 17
   oa_url: https://doi.org/10.1038/s41698-024-00621-x
   track: professional
+  impact_factor: 6.8
 - id: W4394804441
   title: Liquid‐Metal‐Based Soft Pressure Sensor and Multidirectional Detection by Machine Learning
   authors:
@@ -74,6 +75,7 @@ publications:
   cited_by_count: 23
   oa_url: https://doi.org/10.1002/admt.202302134
   track: academic
+  impact_factor: 6.4
 - id: W4392250677
   title: Real-time Histological Evaluation of Gastric Cancer Tissue by Using a Confocal Laser Endomicroscopic
     System
@@ -98,6 +100,7 @@ publications:
   cited_by_count: 1
   oa_url: https://doi.org/10.21873/invivo.13511
   track: professional
+  impact_factor: 1.9
 - id: W4382203516
   title: A Wireless and Wearable Body-Pressure-Monitoring System for the Prevention of Pressure-Induced
     Skin Injuries
@@ -121,6 +124,7 @@ publications:
   cited_by_count: 20
   oa_url: null
   track: academic
+  impact_factor: 4.0
 - id: W4319986446
   title: Wireless, multimodal sensors for continuous measurement of pressure, temperature, and hydration
     of patients in wheelchair
@@ -176,6 +180,7 @@ publications:
   cited_by_count: 85
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
+  impact_factor: 11.6
 - id: W4211150801
   title: Handheld laser scanning microscope catheter for real-time and in vivo confocal microscopy using
     a high definition high frame rate Lissajous MEMS mirror
@@ -198,6 +203,7 @@ publications:
   cited_by_count: 17
   oa_url: https://doi.org/10.1364/boe.447558
   track: professional
+  impact_factor: 3.2
 - id: W3206257055
   title: Customizable, conformal, and stretchable 3D electronics via predistorted pattern generation and
     thermoforming
@@ -225,6 +231,7 @@ publications:
   cited_by_count: 63
   oa_url: https://doi.org/10.1126/sciadv.abj0694
   track: academic
+  impact_factor: 11.7
 - id: W3193659330
   title: Battery-free, wireless soft sensors for continuous multi-site measurements of pressure and temperature
     from patients at risk for pressure injuries
@@ -298,6 +305,7 @@ publications:
   cited_by_count: 195
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
+  impact_factor: 14.7
 - id: W3194273227
   title: Sensitivity-Controllable Liquid-Metal-Based Pressure Sensor for Wearable Applications
   authors:
@@ -319,6 +327,7 @@ publications:
   cited_by_count: 55
   oa_url: null
   track: academic
+  impact_factor: 4.3
 - id: W3154182465
   title: Fast Flexible Bottom‐Gated Hydrogen Sensor Based on Silicon Nanomembrane
   authors:
@@ -337,6 +346,7 @@ publications:
   cited_by_count: 3
   oa_url: null
   track: academic
+  impact_factor: 6.4
 - id: W3134309900
   title: Ultra‐Wide Range Pressure Sensor Based on a Microstructured Conductive Nanocomposite for Wearable
     Workout Monitoring
@@ -360,9 +370,10 @@ publications:
   type: article
   doi: 10.1002/adhm.202001461
   pmid: '33694309'
-  cited_by_count: 69
+  cited_by_count: 70
   oa_url: null
   track: academic
+  impact_factor: 10.0
 - id: W3165117702
   title: All-soft multiaxial force sensor based on liquid metal for electronic skin
   authors:
@@ -383,6 +394,7 @@ publications:
   cited_by_count: 46
   oa_url: https://doi.org/10.1186/s40486-020-00126-9
   track: academic
+  impact_factor: 2.5
 - id: W3040283350
   title: Microdome-Induced Strain Localization for Biaxial Strain Decoupling toward Stretchable and Wearable
     Human Motion Detection
@@ -405,6 +417,7 @@ publications:
   cited_by_count: 33
   oa_url: null
   track: academic
+  impact_factor: 3.7
 - id: W3023299168
   title: Wearable self-powered pressure sensor by integration of piezo-transmittance microporous elastomer
     with organic solar cell
@@ -434,6 +447,7 @@ publications:
   cited_by_count: 80
   oa_url: null
   track: academic
+  impact_factor: 16.8
 - id: W3007780519
   title: Microporous Elastomer Filter Coated with Metal Organic Frameworks for Improved Selectivity and
     Stability of Metal Oxide Gas Sensors
@@ -457,6 +471,7 @@ publications:
   cited_by_count: 62
   oa_url: null
   track: academic
+  impact_factor: 8.3
 - id: W3005220049
   title: Ultrathin, Biocompatible, and Flexible Pressure Sensor with a Wide Pressure Range and Its Biomedical
     Application
@@ -477,6 +492,7 @@ publications:
   cited_by_count: 106
   oa_url: null
   track: academic
+  impact_factor: 8.2
 - id: W2995757910
   title: Synergetic Effect of Porous Elastomer and Percolation of Carbon Nanotube Filler toward High Performance
     Capacitive Pressure Sensors
@@ -503,6 +519,7 @@ publications:
   cited_by_count: 198
   oa_url: null
   track: academic
+  impact_factor: 8.3
 - id: W2996391250
   title: Heterogeneous Conductance‐Based Locally Shape‐Morphable Soft Electrothermal Actuator
   authors:
@@ -528,6 +545,7 @@ publications:
   cited_by_count: 41
   oa_url: null
   track: academic
+  impact_factor: 6.4
 - id: W2979796094
   title: 'Highly Sensitive and Wearable Liquid Metal‐Based Pressure Sensor for Health Monitoring Applications:
     Integration of a 3D‐Printed Microbump Array with the Microchannel'
@@ -551,6 +569,7 @@ publications:
   cited_by_count: 184
   oa_url: null
   track: academic
+  impact_factor: 10.0
 - id: W2949636083
   title: Wearable, Ultrawide-Range, and Bending-Insensitive Pressure Sensor Based on Carbon Nanotube Network-Coated
     Porous Elastomer Sponges for Human Interface and Healthcare Devices
@@ -576,6 +595,7 @@ publications:
   cited_by_count: 237
   oa_url: https://eprints.gla.ac.uk/281661/
   track: academic
+  impact_factor: 8.3
 - id: W2969513234
   title: Strain-Insensitive Soft Pressure Sensor for Health Monitoring Application Using 3D-Printed Microchannel
     Mold and Liquid Metal
@@ -722,6 +742,7 @@ publications:
   cited_by_count: 50
   oa_url: null
   track: academic
+  impact_factor: 8.3
 - id: W2782473091
   title: Biopsy Needle Integrated with Electrical Impedance Sensing Microelectrode Array towards Real-time
     Needle Guidance and Tissue Discrimination
@@ -743,6 +764,7 @@ publications:
   cited_by_count: 56
   oa_url: https://doi.org/10.1038/s41598-017-18360-4
   track: academic
+  impact_factor: 3.8
 - id: W2798797308
   title: Development of thin film based flexible pressure sensor and biomedical application to real-time
     pressure monitoring during radiofrequency ablation
@@ -783,6 +805,7 @@ publications:
   cited_by_count: 311
   oa_url: null
   track: academic
+  impact_factor: 4.3
 - id: W2593305914
   title: Surface micro-structured, stretchable strain sensor towards biaxial sensitivity and performance
     enhancement

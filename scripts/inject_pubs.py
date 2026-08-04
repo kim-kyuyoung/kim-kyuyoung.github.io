@@ -69,13 +69,17 @@ def render(pub: dict) -> str:
         bits.append(esc(pub["year"]))
     meta = ", ".join(bits)
 
+    badge = ""
+    if pub.get("impact_factor") is not None:
+        badge = f' <span class="if">IF {esc(pub["impact_factor"])}</span>'
+
     authors = render_authors(pub.get("authors") or [])
 
     return (
         "    <li>"
         f'<span class="what">{title}</span>'
         f'<span class="note">{authors}</span>'
-        f'<span class="note">{meta}</span>'
+        f'<span class="note">{meta}{badge}</span>'
         "</li>"
     )
 

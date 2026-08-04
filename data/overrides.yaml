@@ -32,6 +32,31 @@ include_doi:
   - "10.1021/acs.langmuir.0c01450" # 2020 Langmuir — Microdome-induced strain localization
   - "10.5369/jsst.2019.28.3.198"   # 2019 J Sens Sci Technol — Wearable force sensor, 3D-printed mold
 
+# 저널별 Impact Factor. 논문 목록에 IF 배지로 표시된다. 저널명(venue)이 정확히
+# 일치할 때만 붙는다. 값이 없는 저널(케이스 리포트·국문지·학회지)은 배지가 생략된다.
+#
+# ⚠️ 아래 수치는 근사값이다. 공개 전에 각 저널의 최신 JCR Impact Factor 로 반드시 검증할 것.
+#    IF 는 매년 바뀌므로, 갱신하면 이 표만 고치면 된다.
+journal_if:
+  "Nature Communications": 14.7
+  "Science Advances": 11.7
+  "Nano Energy": 16.8
+  "npj Flexible Electronics": 11.6
+  "npj Precision Oncology": 6.8
+  "Advanced Healthcare Materials": 10.0
+  "ACS Applied Materials & Interfaces": 8.3
+  "ACS Sensors": 8.2
+  "Advanced Materials Technologies": 6.4
+  "Sensors and Actuators A Physical": 4.3
+  "ACS Applied Electronic Materials": 4.3
+  "IEEE Transactions on Biomedical Circuits and Systems": 4.0
+  "Scientific Reports": 3.8
+  "Langmuir": 3.7
+  "Biomedical Optics Express": 3.2
+  "Micro and Nano Systems Letters": 2.5
+  "In Vivo": 1.9
+  # IF 없음(배지 생략): Journal of Neurosurgery Case Lessons, Journal of Sensor Science and Technology
+
 # 동명이인 논문이 섞여 들어왔을 때 DOI를 여기 적으면 제외된다.
 # OpenAlex author A5074235764 가 여러 명의 Kyuyoung/Kyu-Young Kim 을 병합해 두었으나,
 # 이제 ORCID 를 기준으로 수집하므로 동명이인은 애초에 들어오지 않는다.
