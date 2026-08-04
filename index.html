@@ -14,13 +14,18 @@
 <meta property="og:url" content="https://kim-kyuyoung.github.io/">
 
 <style>
+/* VPIX Medical 로고 색상.
+   딥 네이비 #3c3c6c (워드마크) · 스틸 블루 #306090 (보조) · 골드 #fccc00 (포인트).
+   밝은 톤을 기본으로 하고, 다크 모드는 검정 대신 VPIX 딥 네이비로 재브랜딩한다. */
 :root {
-  --fg: #1a1a1a;
-  --muted: #6b6b6b;
-  --faint: #a0a0a0;
-  --rule: #e5e5e5;
-  --bg: #fff;
-  --link: #1a1a1a;
+  --fg: #1c1c2b;      /* 본문: 순검정 대신 네이비 기운의 짙은 회색 */
+  --muted: #63667a;
+  --faint: #9fa1b4;
+  --rule: #e6e6ee;
+  --bg: #ffffff;
+  --brand: #3c3c6c;   /* 이름·통계 숫자 */
+  --link: #2f5d92;    /* 링크: 스틸 블루 */
+  --gold: #b8860b;
 
   /* 본문은 세리프, 라벨·날짜는 산세리프로 대비를 준다.
      전부 OS 기본 탑재 서체라 외부 폰트를 받아오지 않는다. */
@@ -31,12 +36,14 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg: #e4e4e4;
-    --muted: #9a9a9a;
-    --faint: #6e6e6e;
-    --rule: #2c2c2c;
-    --bg: #141414;
-    --link: #e4e4e4;
+    --fg: #e7e8f2;
+    --muted: #a4a6bd;
+    --faint: #6f7192;
+    --rule: #313152;   /* VPIX 네이비 톤의 구분선 */
+    --bg: #16162a;     /* 검정이 아닌 VPIX 딥 네이비 배경 */
+    --brand: #c6cbf0;
+    --link: #9fb6de;
+    --gold: #fccc00;
   }
 }
 
@@ -59,10 +66,10 @@ main { max-width: 40rem; margin: 0 auto; }
 a {
   color: var(--link);
   text-decoration: underline;
-  text-decoration-color: var(--rule);
+  text-decoration-color: color-mix(in srgb, var(--link) 35%, transparent);
   text-underline-offset: 3px;
 }
-a:hover { text-decoration-color: var(--muted); }
+a:hover { text-decoration-color: var(--link); }
 
 /* ---- header ---------------------------------------------------------- */
 
@@ -81,6 +88,7 @@ h1 {
   font-weight: 500;
   line-height: 0.98;
   letter-spacing: -0.02em;
+  color: var(--brand);
 }
 h1 .surname { font-style: italic; }
 h1 .ko {
@@ -123,6 +131,7 @@ h1 .ko {
   font-weight: 500;
   letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
+  color: var(--brand);
 }
 .stats .cap {
   margin-top: 0.35rem;
