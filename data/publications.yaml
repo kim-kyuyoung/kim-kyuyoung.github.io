@@ -1,11 +1,11 @@
 orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
-  count: 32
-  total_citations: 1968
+  count: 25
+  total_citations: 1953
   h_index: 19
   i10_index: 21
-  first_author_count: 6
+  first_author_count: 4
 publications:
 - id: W7131141441
   title: 'Real-time intraoperative confocal laser endomicroscopy with on-site neuropathologist consultation
@@ -596,113 +596,6 @@ publications:
   oa_url: https://eprints.gla.ac.uk/281661/
   track: academic
   impact_factor: 8.3
-- id: W2969513234
-  title: Strain-Insensitive Soft Pressure Sensor for Health Monitoring Application Using 3D-Printed Microchannel
-    Mold and Liquid Metal
-  authors:
-  - Kyuyoung Kim
-  - Jungrak Choi
-  - Yongrok Jeong
-  - Minseong Kim
-  - Incheol Cho
-  - Seung-Hwan Kim
-  - Yongsuk Oh
-  - Inkyu Park
-  author_position: 1
-  is_first_author: true
-  venue: null
-  year: 2019
-  date: '2019-06-01'
-  type: conference-paper
-  doi: 10.1109/transducers.2019.8808472
-  pmid: null
-  cited_by_count: 6
-  oa_url: null
-  track: academic
-- id: W2969667473
-  title: Wide Range-Sensitive, Bending-Insensitive Pressure Detection and Application to Wearable Healthcare
-    Device
-  authors:
-  - Seung-Hwan Kim
-  - Morteza Amjadi
-  - Tae‐Ik Lee
-  - Yongrok Jeong
-  - Donguk Kwon
-  - Min Seong Kim
-  - Kyuyoung Kim
-  - Taek‐Soo Kim
-  - Yong Suk Oh
-  - Inkyu Park
-  author_position: 7
-  is_first_author: false
-  venue: null
-  year: 2019
-  date: '2019-06-01'
-  type: conference-paper
-  doi: 10.1109/transducers.2019.8808529
-  pmid: null
-  cited_by_count: 2
-  oa_url: https://eprints.gla.ac.uk/281660/
-  track: academic
-- id: W2980681019
-  title: Wearable Soft Microfluidic Pressure Sensor Using 3D-Printed Mold for Health Monitoring
-  authors:
-  - Kyuyoung Kim
-  - Jungrak Choi
-  - Yongrok Jeong
-  - Minseong Kim
-  - Jaeho Park
-  - Yongsuk Oh
-  - Inkyu Park
-  author_position: 1
-  is_first_author: true
-  venue: null
-  year: 2019
-  date: '2019-01-01'
-  type: conference-paper
-  doi: 10.1109/memsys.2019.8870758
-  pmid: null
-  cited_by_count: 2
-  oa_url: null
-  track: academic
-- id: W2981235273
-  title: Stretchable fabric heater based on silver nanowire, carbon nanotube composites
-  authors:
-  - Junseong Ahn
-  - Jimin Gu
-  - Yongrok Jeong
-  - Kyuyoung Kim
-  - Jun‐Ho Jeong
-  - Inkyu Park
-  author_position: 4
-  is_first_author: false
-  venue: null
-  year: 2019
-  date: '2019-01-01'
-  type: conference-paper
-  doi: 10.1109/memsys.2019.8870720
-  pmid: null
-  cited_by_count: 2
-  oa_url: null
-  track: academic
-- id: W2980450362
-  title: Flexible Pressure Sensor Based on Porous Dielectric Elastomer Containing Conductive Filler
-  authors:
-  - Jungrak Choi
-  - Kyuyoung Kim
-  - Yongsuk Oh
-  - Inkyu Park
-  author_position: 2
-  is_first_author: false
-  venue: null
-  year: 2019
-  date: '2019-01-01'
-  type: conference-paper
-  doi: 10.1109/memsys.2019.8870802
-  pmid: null
-  cited_by_count: 0
-  oa_url: null
-  track: academic
 - id: W3082087128
   title: Wearable Force Sensor Using 3D-printed Mold and Liquid Metal
   authors:
@@ -765,25 +658,6 @@ publications:
   oa_url: https://doi.org/10.1038/s41598-017-18360-4
   track: academic
   impact_factor: 3.8
-- id: W2798797308
-  title: Development of thin film based flexible pressure sensor and biomedical application to real-time
-    pressure monitoring during radiofrequency ablation
-  authors:
-  - Yongrok Jeong
-  - Jaeho Park
-  - Kyuyoung Kim
-  - Inkyu Park
-  author_position: 3
-  is_first_author: false
-  venue: null
-  year: 2018
-  date: '2018-01-01'
-  type: conference-paper
-  doi: 10.1109/memsys.2018.8346553
-  pmid: null
-  cited_by_count: 0
-  oa_url: null
-  track: academic
 - id: W2734870921
   title: 3D printing of multiaxial force sensors using carbon nanotube (CNT)/thermoplastic polyurethane
     (TPU) filaments
@@ -806,23 +680,3 @@ publications:
   oa_url: null
   track: academic
   impact_factor: 4.3
-- id: W2593305914
-  title: Surface micro-structured, stretchable strain sensor towards biaxial sensitivity and performance
-    enhancement
-  authors:
-  - Min Seong Kim
-  - Donguk Kwon
-  - Seung‐Hwan Kim
-  - Kyuyoung Kim
-  - Inkyu Park
-  author_position: 4
-  is_first_author: false
-  venue: null
-  year: 2017
-  date: '2017-01-01'
-  type: conference-paper
-  doi: 10.1109/memsys.2017.7863591
-  pmid: null
-  cited_by_count: 3
-  oa_url: null
-  track: academic

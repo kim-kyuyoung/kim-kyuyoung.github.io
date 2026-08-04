@@ -62,6 +62,17 @@ journal_if:
 # 이제 ORCID 를 기준으로 수집하므로 동명이인은 애초에 들어오지 않는다.
 # 아래는 정오표·표지그림·리포지터리 사본 등 같은 논문의 중복 레코드를 제외하는 목록이다.
 exclude_doi:
+  # IEEE/학회 프로시딩. 저널명(venue)이 없어 목록에서 정체가 불명확하고, 링크는 IEEE Xplore
+  # 유료·로그인 페이지로 연결된다. 대부분 이미 talks 섹션에 학회발표로 실려 있어 중복이다.
+  # 논문 목록은 peer-reviewed 저널만 남긴다.
+  - "10.1109/transducers.2019.8808472"  # Transducers 2019 — Strain-insensitive soft pressure sensor
+  - "10.1109/transducers.2019.8808529"  # Transducers 2019 — Wide range-sensitive pressure detection
+  - "10.1109/memsys.2019.8870758"       # IEEE MEMS 2019 — Wearable soft microfluidic pressure sensor
+  - "10.1109/memsys.2019.8870720"       # IEEE MEMS 2019 — Stretchable fabric heater
+  - "10.1109/memsys.2019.8870802"       # IEEE MEMS 2019 — Flexible pressure sensor, porous dielectric
+  - "10.1109/memsys.2018.8346553"       # IEEE MEMS 2018 — Thin-film flexible pressure sensor
+  - "10.1109/memsys.2017.7863591"       # IEEE MEMS 2017 — Surface micro-structured strain sensor
+
   - "10.1038/s41467-021-26984-4"   # Author Correction — 10.1038/s41467-021-25324-w 의 정오표
   - "10.1021/acsami.0c03447"       # Correction — Synergetic effect of porous elastomer 의 정오표
   - "10.17615/20mt-rj52"           # UNC 리포지터리 사본 (Author Correction)
