@@ -25,9 +25,9 @@
   --faint: #aaa498;
   --rule: #eeeae0;    /* warm 구분선 */
   --bg: #ffffff;
-  --brand: #c2410c;   /* 이름·통계 숫자: 번트 오렌지 */
-  --link: #c2410c;    /* 링크: 번트 오렌지 */
-  --gold: #fccc00;    /* 로고 옐로우: 얇은 포인트 라인 전용 */
+  --brand: #1f1c17;   /* 이름·통계 숫자: 차분한 검정 */
+  --link: #1f1c17;    /* 링크 글자도 검정, 강조는 옐로우 밑줄로 */
+  --gold: #f4b400;    /* 로고 옐로우(살짝 오렌지 기운): 포인트 라인·밑줄 */
 
   /* 본문은 세리프, 라벨·날짜는 산세리프로 대비를 준다.
      전부 OS 기본 탑재 서체라 외부 폰트를 받아오지 않는다. */
@@ -56,10 +56,11 @@ main { max-width: 40rem; margin: 0 auto; }
 a {
   color: var(--link);
   text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--link) 35%, transparent);
+  text-decoration-color: var(--gold);   /* 옐로우 밑줄 포인트 */
+  text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
 }
-a:hover { text-decoration-color: var(--link); }
+a:hover { text-decoration-thickness: 3px; }
 
 /* ---- header ---------------------------------------------------------- */
 
