@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 25
-  total_citations: 1953
+  total_citations: 1958
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -302,7 +302,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 195
+  cited_by_count: 196
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -516,7 +516,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 198
+  cited_by_count: 200
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -566,7 +566,7 @@ publications:
   type: article
   doi: 10.1002/adhm.201900978
   pmid: '31596545'
-  cited_by_count: 184
+  cited_by_count: 185
   oa_url: null
   track: academic
   impact_factor: 10.0
@@ -676,7 +676,7 @@ publications:
   type: article
   doi: 10.1016/j.sna.2017.07.020
   pmid: null
-  cited_by_count: 311
+  cited_by_count: 312
   oa_url: null
   track: academic
   impact_factor: 4.3
