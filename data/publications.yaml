@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 25
-  total_citations: 1958
+  total_citations: 1976
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -72,7 +72,7 @@ publications:
   type: article
   doi: 10.1002/admt.202302134
   pmid: null
-  cited_by_count: 23
+  cited_by_count: 24
   oa_url: https://doi.org/10.1002/admt.202302134
   track: academic
   impact_factor: 6.4
@@ -177,7 +177,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 85
+  cited_by_count: 88
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -302,7 +302,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 196
+  cited_by_count: 197
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -324,7 +324,7 @@ publications:
   type: article
   doi: 10.1021/acsaelm.1c00546
   pmid: null
-  cited_by_count: 55
+  cited_by_count: 56
   oa_url: null
   track: academic
   impact_factor: 4.3
@@ -343,7 +343,7 @@ publications:
   type: article
   doi: 10.1002/admt.202000847
   pmid: null
-  cited_by_count: 3
+  cited_by_count: 4
   oa_url: null
   track: academic
   impact_factor: 6.4
@@ -370,8 +370,8 @@ publications:
   type: article
   doi: 10.1002/adhm.202001461
   pmid: '33694309'
-  cited_by_count: 70
-  oa_url: null
+  cited_by_count: 72
+  oa_url: https://eprints.gla.ac.uk/281656/1/281656.pdf
   track: academic
   impact_factor: 10.0
 - id: W3165117702
@@ -391,7 +391,7 @@ publications:
   type: article
   doi: 10.1186/s40486-020-00126-9
   pmid: null
-  cited_by_count: 46
+  cited_by_count: 47
   oa_url: https://doi.org/10.1186/s40486-020-00126-9
   track: academic
   impact_factor: 2.5
@@ -468,7 +468,7 @@ publications:
   type: article
   doi: 10.1021/acsami.0c00143
   pmid: '32073247'
-  cited_by_count: 62
+  cited_by_count: 63
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -489,7 +489,7 @@ publications:
   type: article
   doi: 10.1021/acssensors.9b02260
   pmid: '32020796'
-  cited_by_count: 106
+  cited_by_count: 107
   oa_url: null
   track: academic
   impact_factor: 8.2
@@ -516,7 +516,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 200
+  cited_by_count: 202
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -566,7 +566,7 @@ publications:
   type: article
   doi: 10.1002/adhm.201900978
   pmid: '31596545'
-  cited_by_count: 185
+  cited_by_count: 186
   oa_url: null
   track: academic
   impact_factor: 10.0
@@ -592,7 +592,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b07636
   pmid: '31180635'
-  cited_by_count: 237
+  cited_by_count: 238
   oa_url: https://eprints.gla.ac.uk/281661/
   track: academic
   impact_factor: 8.3
@@ -676,7 +676,7 @@ publications:
   type: article
   doi: 10.1016/j.sna.2017.07.020
   pmid: null
-  cited_by_count: 312
+  cited_by_count: 314
   oa_url: null
   track: academic
   impact_factor: 4.3
