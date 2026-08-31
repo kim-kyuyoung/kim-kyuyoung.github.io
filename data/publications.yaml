@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 25
-  total_citations: 1979
+  total_citations: 1989
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -72,7 +72,7 @@ publications:
   type: article
   doi: 10.1002/admt.202302134
   pmid: null
-  cited_by_count: 24
+  cited_by_count: 25
   oa_url: https://doi.org/10.1002/admt.202302134
   track: academic
   impact_factor: 6.4
@@ -121,7 +121,7 @@ publications:
   type: article
   doi: 10.1109/tbcas.2023.3288126
   pmid: '37368797'
-  cited_by_count: 20
+  cited_by_count: 21
   oa_url: null
   track: academic
   impact_factor: 4.0
@@ -177,7 +177,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 88
+  cited_by_count: 91
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -302,7 +302,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 197
+  cited_by_count: 199
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -566,7 +566,7 @@ publications:
   type: article
   doi: 10.1002/adhm.201900978
   pmid: '31596545'
-  cited_by_count: 186
+  cited_by_count: 187
   oa_url: null
   track: academic
   impact_factor: 10.0
@@ -654,7 +654,7 @@ publications:
   type: article
   doi: 10.1038/s41598-017-18360-4
   pmid: '29321531'
-  cited_by_count: 56
+  cited_by_count: 57
   oa_url: https://doi.org/10.1038/s41598-017-18360-4
   track: academic
   impact_factor: 3.8
@@ -676,7 +676,7 @@ publications:
   type: article
   doi: 10.1016/j.sna.2017.07.020
   pmid: null
-  cited_by_count: 316
+  cited_by_count: 317
   oa_url: null
   track: academic
   impact_factor: 4.3
