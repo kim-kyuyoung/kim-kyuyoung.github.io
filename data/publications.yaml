@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 25
-  total_citations: 1989
+  total_citations: 1997
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -72,7 +72,7 @@ publications:
   type: article
   doi: 10.1002/admt.202302134
   pmid: null
-  cited_by_count: 25
+  cited_by_count: 26
   oa_url: https://doi.org/10.1002/admt.202302134
   track: academic
   impact_factor: 6.4
@@ -177,7 +177,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 91
+  cited_by_count: 92
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -228,7 +228,7 @@ publications:
   type: article
   doi: 10.1126/sciadv.abj0694
   pmid: '34644113'
-  cited_by_count: 64
+  cited_by_count: 65
   oa_url: https://doi.org/10.1126/sciadv.abj0694
   track: academic
   impact_factor: 11.7
@@ -302,7 +302,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 199
+  cited_by_count: 202
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -468,7 +468,7 @@ publications:
   type: article
   doi: 10.1021/acsami.0c00143
   pmid: '32073247'
-  cited_by_count: 63
+  cited_by_count: 64
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -516,7 +516,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 202
+  cited_by_count: 203
   oa_url: null
   track: academic
   impact_factor: 8.3
