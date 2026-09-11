@@ -1,12 +1,32 @@
 orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
-  count: 25
-  total_citations: 1997
+  count: 26
+  total_citations: 2001
   h_index: 19
   i10_index: 21
   first_author_count: 4
 publications:
+- id: W7171926097
+  title: 'Recent Advances in Functional Composite Materials and Smart Structures for Wearable Physical
+    Sensors: A Review'
+  authors:
+  - Osman Gul
+  - Kyuyoung Kim
+  - Jungrak Choi
+  - Seokjoo Cho
+  - Inkyu Park
+  author_position: 2
+  is_first_author: false
+  venue: Transactions on Electrical and Electronic Materials
+  year: 2026
+  date: '2026-07-31'
+  type: article
+  doi: 10.1007/s42341-026-00718-z
+  pmid: null
+  cited_by_count: 0
+  oa_url: null
+  track: academic
 - id: W7131141441
   title: 'Real-time intraoperative confocal laser endomicroscopy with on-site neuropathologist consultation
     for glioma margin assessment: illustrative case'
@@ -24,7 +44,7 @@ publications:
   doi: 10.3171/case25890
   pmid: '41730199'
   cited_by_count: 0
-  oa_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12927198/
+  oa_url: https://doi.org/10.3171/case25890
   track: professional
 - id: W4399678217
   title: Artificial intelligence-based real-time histopathology of gastric cancer using confocal laser
@@ -52,7 +72,7 @@ publications:
   type: article
   doi: 10.1038/s41698-024-00621-x
   pmid: '38877301'
-  cited_by_count: 17
+  cited_by_count: 18
   oa_url: https://doi.org/10.1038/s41698-024-00621-x
   track: professional
   impact_factor: 6.8
@@ -177,7 +197,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 92
+  cited_by_count: 93
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -302,7 +322,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 202
+  cited_by_count: 203
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -632,7 +652,7 @@ publications:
   type: article
   doi: 10.1021/acsami.8b01583
   pmid: '29578325'
-  cited_by_count: 50
+  cited_by_count: 51
   oa_url: null
   track: academic
   impact_factor: 8.3

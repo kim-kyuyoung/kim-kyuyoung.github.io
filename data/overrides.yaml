@@ -20,6 +20,7 @@ include_doi:
   - "10.1364/boe.447558"           # 2022 Biomed Opt Express — Handheld Lissajous MEMS confocal catheter
 
   # KAIST 박인규 연구실 · 유연센서
+  - "10.1007/s42341-026-00718-z"   # 2026 Trans Electr Electron Mater — Functional composites review
   - "10.1002/admt.202302134"       # 2024 Adv Mater Technol — Liquid-metal soft pressure sensor, ML multidirectional
   - "10.1038/s41528-023-00238-3"   # 2023 npj Flex Electron — Wireless multimodal sensors
   - "10.1038/s41467-021-25324-w"   # 2021 Nat Commun — Battery-free wireless soft sensors
