@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 26
-  total_citations: 2004
+  total_citations: 2008
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -141,7 +141,7 @@ publications:
   type: article
   doi: 10.1109/tbcas.2023.3288126
   pmid: '37368797'
-  cited_by_count: 21
+  cited_by_count: 23
   oa_url: null
   track: academic
   impact_factor: 4.0
@@ -322,7 +322,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 203
+  cited_by_count: 204
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -612,7 +612,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b07636
   pmid: '31180635'
-  cited_by_count: 238
+  cited_by_count: 239
   oa_url: https://eprints.gla.ac.uk/281661/
   track: academic
   impact_factor: 8.3
