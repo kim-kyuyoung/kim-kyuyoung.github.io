@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 26
-  total_citations: 2015
+  total_citations: 2020
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -177,7 +177,7 @@ publications:
   - Seunghwan Kim
   - Kyuyoung Kim
   - Jeonghyun Kim
-  - Chang‐Mo Kang
+  - Chang-Mo Kang
   - Jahyun Koo
   - Sung Soo Kwak
   - Sungbong Kim
@@ -197,7 +197,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 95
+  cited_by_count: 96
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -220,7 +220,7 @@ publications:
   type: article
   doi: 10.1364/boe.447558
   pmid: '35414975'
-  cited_by_count: 18
+  cited_by_count: 19
   oa_url: https://doi.org/10.1364/boe.447558
   track: professional
   impact_factor: 3.2
@@ -248,7 +248,7 @@ publications:
   type: article
   doi: 10.1126/sciadv.abj0694
   pmid: '34644113'
-  cited_by_count: 65
+  cited_by_count: 66
   oa_url: https://doi.org/10.1126/sciadv.abj0694
   track: academic
   impact_factor: 11.7
@@ -282,7 +282,7 @@ publications:
   - Sung Bong Kim
   - Jeonghyun Kim
   - Jungil Choi
-  - Chang‐Mo Kang
+  - Chang-Mo Kang
   - Jong Uk Kim
   - Kyeongha Kwon
   - Sang Min Won
@@ -313,7 +313,7 @@ publications:
   - Hyung Jin Sung
   - Yonggang Y. Huang
   - Inkyu Park
-  - John Allen Rogers
+  - John A. Rogers
   author_position: 39
   is_first_author: false
   venue: Nature Communications
@@ -322,7 +322,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 205
+  cited_by_count: 206
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -652,7 +652,7 @@ publications:
   type: article
   doi: 10.1021/acsami.8b01583
   pmid: '29578325'
-  cited_by_count: 51
+  cited_by_count: 52
   oa_url: null
   track: academic
   impact_factor: 8.3
