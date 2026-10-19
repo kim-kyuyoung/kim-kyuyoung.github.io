@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 26
-  total_citations: 2012
+  total_citations: 2007
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -24,7 +24,7 @@ publications:
   type: article
   doi: 10.1007/s42341-026-00718-z
   pmid: null
-  cited_by_count: 0
+  cited_by_count: 1
   oa_url: null
   track: academic
 - id: W7131141441
@@ -197,7 +197,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 96
+  cited_by_count: 99
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -322,7 +322,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 205
+  cited_by_count: 204
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -390,7 +390,7 @@ publications:
   type: article
   doi: 10.1002/adhm.202001461
   pmid: '33694309'
-  cited_by_count: 72
+  cited_by_count: 71
   oa_url: https://eprints.gla.ac.uk/281656/1/281656.pdf
   track: academic
   impact_factor: 10.0
@@ -488,7 +488,7 @@ publications:
   type: article
   doi: 10.1021/acsami.0c00143
   pmid: '32073247'
-  cited_by_count: 64
+  cited_by_count: 62
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -536,7 +536,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 202
+  cited_by_count: 201
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -562,7 +562,7 @@ publications:
   type: article
   doi: 10.1002/admt.201900997
   pmid: null
-  cited_by_count: 40
+  cited_by_count: 41
   oa_url: null
   track: academic
   impact_factor: 6.4
@@ -612,7 +612,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b07636
   pmid: '31180635'
-  cited_by_count: 240
+  cited_by_count: 237
   oa_url: https://eprints.gla.ac.uk/281661/
   track: academic
   impact_factor: 8.3
@@ -620,7 +620,7 @@ publications:
   title: Wearable Force Sensor Using 3D-printed Mold and Liquid Metal
   authors:
   - Kyuyoung Kim
-  - Choi jungrak
+  - Jungrak Choi
   - Yongrok Jeong
   - Minseong Kim
   - Seung Hwan Kim
@@ -652,7 +652,7 @@ publications:
   type: article
   doi: 10.1021/acsami.8b01583
   pmid: '29578325'
-  cited_by_count: 51
+  cited_by_count: 50
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -696,7 +696,7 @@ publications:
   type: article
   doi: 10.1016/j.sna.2017.07.020
   pmid: null
-  cited_by_count: 315
+  cited_by_count: 314
   oa_url: null
   track: academic
   impact_factor: 4.3
