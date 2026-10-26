@@ -2,7 +2,7 @@ orcid: 0000-0001-8011-3539
 generated_from: orcid+openalex
 stats:
   count: 26
-  total_citations: 2007
+  total_citations: 2013
   h_index: 19
   i10_index: 21
   first_author_count: 4
@@ -197,7 +197,7 @@ publications:
   type: article
   doi: 10.1038/s41528-023-00238-3
   pmid: null
-  cited_by_count: 99
+  cited_by_count: 100
   oa_url: https://doi.org/10.1038/s41528-023-00238-3
   track: academic
   impact_factor: 11.6
@@ -248,7 +248,7 @@ publications:
   type: article
   doi: 10.1126/sciadv.abj0694
   pmid: '34644113'
-  cited_by_count: 67
+  cited_by_count: 68
   oa_url: https://doi.org/10.1126/sciadv.abj0694
   track: academic
   impact_factor: 11.7
@@ -322,7 +322,7 @@ publications:
   type: article
   doi: 10.1038/s41467-021-25324-w
   pmid: '34429436'
-  cited_by_count: 204
+  cited_by_count: 205
   oa_url: https://doi.org/10.1038/s41467-021-25324-w
   track: academic
   impact_factor: 14.7
@@ -536,7 +536,7 @@ publications:
   type: article
   doi: 10.1021/acsami.9b20097
   pmid: '31825585'
-  cited_by_count: 201
+  cited_by_count: 202
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -652,7 +652,7 @@ publications:
   type: article
   doi: 10.1021/acsami.8b01583
   pmid: '29578325'
-  cited_by_count: 50
+  cited_by_count: 51
   oa_url: null
   track: academic
   impact_factor: 8.3
@@ -674,7 +674,7 @@ publications:
   type: article
   doi: 10.1038/s41598-017-18360-4
   pmid: '29321531'
-  cited_by_count: 56
+  cited_by_count: 57
   oa_url: https://doi.org/10.1038/s41598-017-18360-4
   track: academic
   impact_factor: 3.8
